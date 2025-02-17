@@ -42,7 +42,22 @@
           "fileImage": ""
         }
       ]
+    },
+    {
+      "name" : "Webtechnology",
+      "snippets": [
+        {
+          "title": "Write a program using javascript to check whether the given number is Armstrong or not.(Aryan Thapaliya)",
+          "code":"<pre>\n// code to check whether the given number is an Armstrong number or not\nlet num = parseInt(prompt(\"Enter the number which you wanna check: \")); // User bata number liyeko\nlet originalnum = num;\nlet count = 0, sum = 0, temp = num;\nwhile (temp > 1) {\n    count++;\n    temp /= 10;\n} // Wrote this logic to check kati oota digit xa user le diyeko input number ma\n\nfunction checkarmstrong(originalnum) {\n    let temp = originalnum;\n    let sum = 0; // Initialize sum inside function to prevent global overwrite\n    while (temp >= 1) {\n        let digit = temp % 10; // Last ko digit lai extract garxa\n        sum += Math.pow(digit, count); // Last ko digit ma respective power halxa\n        temp = Math.floor(temp / 10); // After action last ko eeuta number hatauxa\n    }\n    return sum === originalnum;\n}\n\nif (checkarmstrong(num)) {\n    console.log(\"The number is an Armstrong number\");\n} else {\n    console.log(\"The number is not an Armstrong number\");\n}\n</pre>"
+,
+          "outputImage": "./assets/filehandling_ii/49_output.png",
+          "fileImage": "./assets/filehandling_ii/49_output.png"
+      
     }
+      ]
+    }
+
+    
   ]
 
 }
